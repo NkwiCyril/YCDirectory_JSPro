@@ -5,13 +5,9 @@ const Dashboard = () => {
   return (
     <>
         <div>Dashboard</div>
-        <ul>
-            <Link href={"/dashboard/users/1"}></Link>
-            <li>User 1</li>
-            <li>User 2</li>
-            <li>User 3</li>
-            <li>User 4</li>
-            <li>User 5</li>
+        <ul className='flex flex-col gap-2 mt-10'>
+            <Link href={"/dashboard/users"}>Users</Link>
+            <Link href={"/dashboard/analytics"}>Analytics</Link>
         </ul>
     </>
   )
