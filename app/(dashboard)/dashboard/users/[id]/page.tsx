@@ -1,6 +1,10 @@
 import React from "react";
 
-const UserDetails = ({ params }: { params: { id: string } }) => {
+interface Param {
+  id: string;
+}
+
+const UserDetails = ({ params }: { params: Param }) => {
   const { id } = params;
 
   return (
